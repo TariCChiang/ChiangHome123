@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自家產牛番茄 - 鮮採分享</title>
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --earthy-green: #4e6e5d;
+            --background-beige: #fdfaf5;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--background-beige);
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--earthy-green);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 3rem 1rem;
+            text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+                        url('https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Values */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 250px;
+            margin: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-bottom: 4px solid var(--earthy-green);
+        }
+
+        /* Product Cards */
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #eee;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-red);
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: var(--primary-red);
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-red);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #eee;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .recipe-tip {
+            background-color: #e9edeb;
+            padding: 1.5rem;
+            border-left: 5px solid var(--earthy-green);
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>自家園子的牛番茄</h1>
+        <p>— 既然是種給家人吃的，當然要最好的 —</p>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h2>這不是商品，是分享一份新鮮</h2>
+            <p>我們家自種的牛番茄最近迎來了大豐收！沒有農藥負擔，只有陽光與雨水的自然滋味。因為數量較多（約20公斤），希望能分享給同樣喜愛天然食材的鄰居與朋友。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-item">
+                <h3>🌱 友善耕作</h3>
+                <p>完全無噴灑化學農藥，自己孩子天天都在園子裡摘來吃，安全最放心。</p>
+            </div>
+            <div class="feature-item">
+                <h3>☀️ 產地直送</h3>
+                <p>今日預訂，明日採收。保留完整蒂頭，鎖住最原始的鮮甜與水分。</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; color: var(--earthy-green);">限時分享組合</h2>
+        <div class="pricing">
+            <div class="card">
+                <h3>嚐鮮分享組</h3>
+                <p>約 2 斤 (1.2kg)</p>
+                <div class="price">NT$ 150</div>
+                <p>適合小家庭一週份量</p>
+            </div>
+            <div class="card" style="background-color: #fff9f9; border-color: var(--primary-red);">
+                <h3>超值燉煮組</h3>
+                <p>約 5 斤 (3kg)</p>
+                <div class="price">NT$ 350</div>
+                <p>適合熬煮番茄糊、蔬菜湯</p>
+            </div>
+        </div>
+
+        <div class="recipe-tip">
+            <h3>💡 小農家常吃法</h3>
+            <p>這批牛番茄皮薄汁多，切片後灑上一點點梅粉，就是最棒的午後點心。或是與雞蛋同炒，簡單的番茄炒蛋就能吃出不簡單的鮮味！</p>
+        </div>
+
+        <div style="text-align: center;">
+            <h2>如何購買？</h2>
+            <p>地點：[填寫您的區域，例如：台中市西屯區自取]</p>
+            <p>LINE ID：[填寫您的ID]</p>
+            <a href="#" class="btn">私訊 LINE 預訂</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 自家小農場 ｜ 數量有限，售完為止</p>
+    </footer>
+
+</body>
+</html>
