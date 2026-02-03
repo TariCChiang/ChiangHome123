@@ -123,12 +123,43 @@
             padding: 2rem 1rem;
             margin-top: 3rem;
         }
+        /* 食譜區塊 */
+        .recipe-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
 
-        .recipe-tip {
-            background-color: #e9edeb;
+        .recipe-card {
+            background: #fff;
             padding: 1.5rem;
+            border-radius: 12px;
             border-left: 5px solid var(--earthy-green);
-            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .recipe-card h3 {
+            color: var(--earthy-green);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .recipe-item {
+            margin-bottom: 1rem;
+        }
+
+        .recipe-item strong {
+            color: var(--primary-red);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .recipe-item p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: #555;
         }
     </style>
 </head>
@@ -174,10 +205,46 @@
             </div>
         </div>
 
-        <div class="recipe-tip">
-            <h3>💡 小農家常吃法</h3>
-            <p>這批牛番茄皮薄汁多，切片後灑上一點點梅粉，就是最棒的午後點心。或是與雞蛋同炒，簡單的番茄炒蛋就能吃出不簡單的鮮味！</p>
-        </div>
+        <h2 style="text-align: center; color: var(--earthy-green);">牛番茄料理筆記</h2>
+                <p style="text-align:center; margin-top:-1rem; color:#666;">不知道怎麼料理？試試這些家常美味：</p>
+                
+                <div class="recipe-section">
+                    <div class="recipe-card">
+                        <h3>🔥 經典家常熱炒</h3>
+                        <div class="recipe-item">
+                            <strong>番茄炒蛋</strong>
+                            <p>先將番茄炒軟出汁，再加入半熟蛋快速拌勻，酸甜下飯的國民美食。</p>
+                        </div>
+                        <div class="recipe-item">
+                            <strong>番茄炒牛肉</strong>
+                            <p>利用番茄的酸軟化牛肉纖維，口感滑嫩且去油解膩。</p>
+                        </div>
+                    </div>
+        
+                    <div class="recipe-card">
+                        <h3>🍲 濃郁湯品燉煮</h3>
+                        <div class="recipe-item">
+                            <strong>番茄燉牛腩</strong>
+                            <p>番茄酸度能加速牛肉軟爛，湯頭酸甜醇厚，拌麵神級選擇。</p>
+                        </div>
+                        <div class="recipe-item">
+                            <strong>羅宋湯 / 蛋花湯</strong>
+                            <p>無論是豐富蔬菜甜味，還是油炒後紅亮的蛋花湯，都是暖心首選。</p>
+                        </div>
+                    </div>
+        
+                    <div class="recipe-card">
+                        <h3>🥗 西式與輕食</h3>
+                        <div class="recipe-item">
+                            <strong>新鮮莎莎醬 (Salsa)</strong>
+                            <p>切丁拌入洋蔥、檸檬汁與橄欖油，搭配玉米片極度清爽。</p>
+                        </div>
+                        <div class="recipe-item">
+                            <strong>焗烤起司番茄</strong>
+                            <p>厚片撒上起司與香料烤至金黃，就是一份優雅的前菜。</p>
+                        </div>
+                    </div>
+                </div>
 
         <div style="text-align: center;">
             <h2>如何購買？</h2>
@@ -194,3 +261,4 @@
 </body>
 
 </html>
+
